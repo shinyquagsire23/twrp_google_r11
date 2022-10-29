@@ -14,17 +14,20 @@ chmod a+rx ~/.bin/repo
 ```
 
 ```
-repo init --depth=1 -u git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-10.0
+repo init --depth=1 -u https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git -b twrp-11
 ```
 
-Then, place `pdx203.xml` in `.repo/local_manifests/`, then run
+Then, place `r11.xml` in `.repo/local_manifests/`, then run
 
 ```
 repo sync -c
-source build/envsetup.sh
-lunch omni_pdx203-userdebug
+export ALLOW_MISSING_DEPENDENCIES=true
+source ./build/envsetup.sh
+lunch aosp_r11-userdebug
 mka recoveryimage
 ```
+
+for some reason I had to copy `prebuilt/*` to `out/target/product/r11/`?
 
 `out/target/product/pdx203/recovery.img` will be the fastbootable/flashable image.
 

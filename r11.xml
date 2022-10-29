@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <project path="device/google/r11" remote="github" name="shinyquagsire23/twrp_google_r11" revision="twrp-11" />
+</manifest>

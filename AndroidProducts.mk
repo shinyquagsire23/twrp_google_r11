@@ -15,7 +15,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_pdx203.mk
+    $(LOCAL_DIR)/aosp_r11.mk
 
 COMMON_LUNCH_CHOICES := \
-    omni_pdx203-eng
+    aosp_r11-eng

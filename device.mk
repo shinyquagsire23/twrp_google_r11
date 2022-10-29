@@ -1,8 +1,8 @@
 
-LOCAL_PATH := device/sony/pdx203
+LOCAL_PATH := device/google/r11
 
 # define hardware platform
-PRODUCT_PLATFORM := kona
+PRODUCT_PLATFORM := exynos5
 
 #TEST
 # A/B support
@@ -20,14 +20,14 @@ AB_OTA_POSTINSTALL_CONFIG += \
     POSTINSTALL_OPTIONAL_system=true
 
 # Boot control HAL
-PRODUCT_PACKAGES += \
-    android.hardware.boot@1.0-impl \
-    android.hardware.boot@1.0-service \
-    android.hardware.boot@1.0-impl-wrapper.recovery \
-    android.hardware.boot@1.0-impl-wrapper \
-    android.hardware.boot@1.0-impl-recovery \
-    bootctrl.kona \
-    bootctrl.kona.recovery \
+#PRODUCT_PACKAGES += \
+#    android.hardware.boot@1.0-impl \
+#    android.hardware.boot@1.0-service \
+#    android.hardware.boot@1.0-impl-wrapper.recovery \
+#    android.hardware.boot@1.0-impl-wrapper \
+#    android.hardware.boot@1.0-impl-recovery \
+#    bootctrl.exynos5 \
+#    bootctrl.exynos5.recovery \
 
 PRODUCT_HOST_PACKAGES += \
     libandroidicu
